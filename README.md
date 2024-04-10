@@ -2,6 +2,9 @@
 
 Este é um projeto de uma página de cinema desenvolvida utilizando HTML, CSS, JavaScript, Bootstrap 5 e jQuery. Esta página oferece uma experiência de usuário intuitiva e responsiva para os amantes de cinema, permitindo visualizar informações sobre filmes em cartaz, horários de exibição, reservar ingressos e muito mais.
 
+<h1>Acesse o Site</h1>
+https://igornunes-dev.github.io/projeto-cinema-bootstrap/
+
 <h2>Funcionalidades Principais:</h2>
 Exibição de Filmes em Cartaz: Os usuários podem ver uma lista dos filmes atualmente em cartaz, juntamente com detalhes como sinopse, elenco, classificação, etc.<br></br>
 
