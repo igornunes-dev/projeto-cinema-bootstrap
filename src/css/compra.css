@@ -1,0 +1,27 @@
+.card {
+  background-color: #1f1f1f;
+}
+
+.mb-3 input {
+  position: relative;
+}
+
+#footer {
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.container-de-compras {
+  min-height: 90vh;
+}
+
+.m-3 {
+  height: 400px
+}
+
+@media (max-width: 425px) {
+  .card-body {
+    height: 35rem;
+  }
+}

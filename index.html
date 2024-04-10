@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineVerso</title>
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="src/img/img-favicon/home.png" type="image/x-icon" />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FontAwesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Css -->
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body class="bg-fundo-home">
+    <!--NAVEGAÇÃO-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-4">
+        <a href="#" class="navbar-brand primary-color">
+          <i class="fa-solid fa-clapperboard"></i>
+          <span>CineVerso</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          arial-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="nav-link primary-color active"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="filmes.html" class="nav-link primary-color">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a href="noticias.html" class="nav-link primary-color"
+                >Notícias</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="comprar.html" class="nav-link primary-color">Comprar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SLIDERS -->
+    <div class="container" id="slider-container">
+      <div class="carousel slide" id="slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            class="active"
+            data-bs-target="#slider"
+            data-bs-slide-to="0"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="1"
+            aria-label="Slide 1"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="2"
+            aria-label="Slide 1"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="src/img/img-slider/slider1.jpg"
+              alt="Duna 1"
+              class="d-block w-100 h-50"
+            />
+            <div class="carousel-caption">
+              <h5>Duna 1</h5>
+              <a href="filmes.html" class="btn btn-dark">Assistir Agora</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="src/img/img-slider/slider2.jpeg"
+              alt="velozes e furiosos"
+              class="d-block w-100 h-50"
+            />
+            <div class="carousel-caption">
+              <h5>Velozes e Furiosos</h5>
+              <a href="filmes.html" class="btn btn-dark">Assistir Agora</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="src/img/img-slider/slider3.jpg"
+              alt="Ela"
+              class="d-block w-100 h-50"
+            />
+            <div class="carousel-caption">
+              <h5>Ela</h5>
+              <a href="filmes.html" class="btn btn-dark">Assistir Agora</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="prev"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="next"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- BANNERS -->
+    <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+      <div class="container">
+        <div class="col-12">
+          <h2 class="title text-light">Nossa Seção</h2>
+          <p class="subtitle secondary-color">Conheça Mais</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4 p-3">
+          <div class="card text-center">
+            <i class="fa-solid fa-credit-card"></i>
+            <div class="card-body">
+              <h5 class="card-title primary-color">
+                Vendas de Ingressos Online
+              </h5>
+              <p class="card-text secondary-color">
+                Vendemos ingressos online, você pode Comprar por meio do
+                <strong>Pix</strong> ou por meio de
+                <strong>Cartão de Crédito</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 p-3">
+          <div class="card text-center">
+            <i class="fa-brands fa-instagram"></i>
+            <div class="card-body">
+              <h5 class="card-title primary-color">Redes Socias</h5>
+              <p class="card-text secondary-color">
+                Acesse nossas <strong>redes sociais</strong> para ficar por
+                dentro de tudo e faça parte da nossa comunidade
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 p-3">
+          <div class="card text-center">
+            <i class="fa-solid fa-user"></i>
+            <div class="card-body">
+              <h5 class="card-title primary-color">Clientes</h5>
+              <p class="card-text secondary-color">
+                Nossos <strong> estão muito satisfeitos</strong> com nossas
+                salas climatizadas e comidas otimas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-4 p-3">
+          <div class="card text-center">
+            <i class="fa-solid fa-users"></i>
+            <div class="card-body">
+              <h5 class="card-title primary-color">Fale conosco</h5>
+              <p class="card-text secondary-color">
+                <strong>Queremos saber o que você pensa!</strong> Seja para
+                compartilhar suas impressões sobre um filme, sugerir novidades
+                ou tirar dúvidas, estamos aqui para ouvir. Mal podemos esperar
+                para ouvir de você!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 p-3">
+          <div class="card text-center">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div class="card-body">
+              <h5 class="card-title primary-color">Política de Privacidade</h5>
+              <p class="card-text secondary-color">
+                <strong> Protegemos sua privacidade</strong> tanto quanto
+                cuidamos da sua diversão. Conheça nossa política de privacidade
+                e assista aos filmes com tranquilidade.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 p-3">
+          <div class="card text-center">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <div class="card-body">
+              <h5 class="card-title primary-color">Ajuda</h5>
+              <p class="card-text secondary-color">
+                Estamos prontos para
+                <strong>ajudar a tornar sua ida ao cinema mais fácil.</strong>
+                Conte conosco para qualquer dúvida ou assistência.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FOTOS CINEMA-->
+    <div class="container" id="featured-container">
+      <div class="col-12">
+        <h2 class="title text-light">Nosso Cinema</h2>
+        <p class="subtitle secondary-color">Conheça Mais</p>
+      </div>
+      <div class="col-12" id="featured-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img
+              src="src/img/img-cinema/cinemaentrada.jpg"
+              alt="Cinema"
+              class="img-fluid"
+            />
+            <div class="banner-content">
+              <h3>Nossa Entrada</h3>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <img
+              src="src/img/img-cinema/sala1.jpg"
+              alt="Cinema"
+              class="img-fluid"
+            />
+            <div class="banner-content">
+              <h3>Sala 1</h3>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <img
+              src="src/img/img-cinema/sala2.jpg"
+              alt="Cinema"
+              class="img-fluid"
+            />
+            <div class="banner-content">
+              <h3>Sala 2</h3>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <img
+              src="src/img/img-cinema/cinemaentrada.jpg"
+              alt="Cinema"
+              class="img-fluid"
+            />
+            <div class="banner-content">
+              <h3>Recepção</h3>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <img src="src/img/img-cinema/sala3.jpg" alt="Cinema" class="img-fluid" />
+            <div class="banner-content">
+              <h3>Sala 3</h3>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <img src="src/img/img-cinema/sala4.jpg" alt="Cinema" class="img-fluid" />
+            <div class="banner-content">
+              <h3>Sala 4</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--INFO-->
+    <div class="container" id="info-container">
+      <div class="col-12">
+        <h2 class="title text-light">Detalhes Importantes</h2>
+        <p class="subtitle secondary-color">Conheça mais da nossa empresa</p>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-6" id="info-banner">
+            <img
+              src="src/img/img-cinema/cinemaentrada.jpg"
+              alt="empresa"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-12 col-md-6 bg-secondary-color" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="primary-color">
+                  Estes dados Podem fazer a diferença
+                </h2>
+                <p class="subtitle secondary-color">
+                  Na nossa empresa de cinema, valorizamos cada dado. Eles nos
+                  ajudam a entender melhor nossos clientes e criar experiências
+                  cinematográficas personalizadas. Cada informação é essencial
+                  para garantir que sua ida ao cinema seja única e memorável.
+                </p>
+              </div>
+              <div class="col-12" id="info-numbers">
+                <div class="row">
+                  <div class="col-4">
+                    <h3 class="primary-color">18</h3>
+                    <p class="secondary-color">Anos</p>
+                  </div>
+
+                  <div class="col-4">
+                    <h3 class="primary-color">500</h3>
+                    <p class="secondary-color">Filmes já colocados em cartaz</p>
+                  </div>
+
+                  <div class="col-4">
+                    <h3 class="primary-color">50</h3>
+                    <p class="secondary-color">Projetos sociais feitos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <a href="#" class="btn btn-dark">Saber Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <h2>CineVerso</h2>
+              </div>
+              <div class="col-4" id="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-12" id="footer-details">
+            <div class="row">
+              <div class="col-12 col-md-4" id="news-container">
+                <h4>Fique por dentro das novidades</h4>
+                <p class="secondary-color">
+                  Inscreva-se para saber em primeira mão
+                </p>
+                <form action="#">
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Digite seu Email"
+                    />
+                  </div>
+                  <button class="btn btn-dark" type="submit">
+                    Inscrever-se
+                  </button>
+                </form>
+              </div>
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de Contato</h4>
+                <p class="secondary-color">(24)3223-3233</p>
+                <p class="secondary-color">CineVerso@gmail.com</p>
+              </div>
+              <div class="col-12 col-md-4" id="links-container">
+                <h4>Você pode está procurando por:</h4>
+                <div class="col-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="secondary-color">Trabalhe conosco</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="secondary-color">Ingressos</a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="secondary-color">CineShop</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
